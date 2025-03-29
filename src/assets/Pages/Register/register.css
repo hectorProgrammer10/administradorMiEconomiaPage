@@ -1,4 +1,38 @@
 .register_register{
   height: 100vh;
-  padding: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+input{
+  margin-bottom: 1rem;
+}
+
+label{
+  margin-bottom: 0.3rem;
+}
+#containerRegister{
+  height: 88%;
+  width: 40rem;
+
+}
+
+#sentRegister{
+  height: 3rem;
+  width: 90%;
+  background-color: black;
+  color: white;
+}
+.avisoRegister{
+  font-size: small;
+}
+.costoForm{
+  height: 3rem;
+  width: 90%;
+  font-size: x-large;
+  padding: 0.3rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
 }

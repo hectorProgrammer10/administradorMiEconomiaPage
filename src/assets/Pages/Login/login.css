@@ -2,75 +2,41 @@
   height: 100vh;
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  z-index: 10;
+  padding-top: 5rem;
 }
 
+#containerLogin{
+  height: 60%;
+  width: 40rem;
 
-#logoLogin{
-  z-index: 1;
-  height: auto;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.login{
-  z-index: 4;
-
-}
-
-#form{
-  height: 40vh;
-  width: 22rem;
-  background-color: #5649F1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 
 .formDatos{
+  padding: 10%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   
-  padding: 10%;
-  font-size: 1.1rem;
-  color: rgba(255, 255, 255, 1);
+  align-items: center;
+  justify-content: space-around;
+
 }
 
-.formDatos input{
-  margin-bottom: 15%;
-  border: 1px solid rgba(50, 50, 50, 0.2);
-  border-radius: 5px;
-  height: 1.6rem;
-  padding-left: 1rem;
-  color: rgba(68, 68, 68, 0.8);
-  font-weight: bold;
+input{
+  height: 3rem;
+  width: 90%;
+  font-size: large;
 }
-.formDatos label{
-  margin-bottom: 4%;
-  height: 1.5rem;
-  font-weight: bold;
+label{
+  font-size: x-large;
 }
-
-.formDatos button{
-  border-radius: 5px;
-  height: 2.5rem;
-  width: 30%;
-  margin: auto;
-  background-color: white;
-  color: #5649F1;
-  font-size: 1.2rem;
-}
-.formDatos button:active{
-  /* background-color: #444444 !important;
-  color: #EFEDE7 !important; */
-  transform: scale(1.1);
-}
-.formDatos button:hover{
-  background-color: rgba(255, 255, 255, 0.1);
+#sentLogin{
+  height: 3rem;
+  width: 90%;
+  background-color: black;
   color: white;
 }
-
-
+.avisoLogin{
+  font-size: small;
+}

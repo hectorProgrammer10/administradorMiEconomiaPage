@@ -2,5 +2,89 @@
   height: 100vh;
   width: 100%;
 
-  background-color: gray;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.barraEstado{
+
+}
+.btnGastos{
+  padding: 0.3rem;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 255, 0.6);
+  margin-left: 0.6rem;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.barraEstado {
+  display: flex;
+  height: 20px;
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.barra {
+  height: 100%;
+}
+
+li{
+  display: flex;
+  margin: 0.3rem;
+}
+.colorCategoriaLi{
+  height: 0.6rem;
+  width: 0.6rem;
+  margin-right: 0.3rem;
+}
+#cat1, .gasto1{
+  background-color: #FF5733;
+}
+#cat2, .gasto2{
+  background-color: #33FF57;
+}
+#cat3, .gasto3{
+  background-color: yellow;
+}
+#cat4, .gasto4{
+  background-color: blue;
+}
+#cat5, .gasto5{
+  background-color: pink;
+}
+#cat6, .gasto6{
+  background-color: greenyellow;
+}
+#imgPrincipal{
+  height: 10rem;
+}
+.imgPrincipal{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(227, 224, 200, 1) !important;
+}
+.pantallaFirst{
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
