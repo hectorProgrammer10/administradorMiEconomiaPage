@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 function AgregarGastos() {
@@ -18,6 +19,17 @@ const [upgrade, setUpgrade] = useState(true)
     color: 'white',
     borderRadius : '5px'
   }
+
+  //useefect
+  useEffect(() => {
+        const verificarPremium = localStorage.getItem('tokenDeAccessx');
+        if(verificarPremium == null){
+          setUpgrade(true);
+        }
+        else{
+          setUpgrade(false);
+        }
+    },[])
 
   const onSubmit = () => {
     event.preventDefault();

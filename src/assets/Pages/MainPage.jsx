@@ -48,6 +48,13 @@ function MainPage() {
     setTimeout(()=>{
       setIsLoading(false)
       setLoadingFirst(true)
+      const verificarPremium = localStorage.getItem('tokenDeAccessx');
+      if(verificarPremium == null){
+        setUpgrade(true);
+      }
+      else{
+        setUpgrade(false);
+      }
     }, 333)
   },[])
   //recuperarSaldo
@@ -66,7 +73,6 @@ function MainPage() {
   useEffect(() => {
     const gastos = JSON.parse(localStorage.getItem('tablaGastos')) || [];
     for(let i=0; i<gastos.length; i++){
-      console.log(gastos[i].categoria)
       if(gastos[i].categoria == 'Comida/Bebida'){
         let suma = gasto1;
         suma= suma+gastos[i].monto;
